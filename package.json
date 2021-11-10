@@ -1,0 +1,13 @@
+{
+  "name": "kohji.blog",
+  "version": "1.0.0",
+  "author": "TANAKA Kohji",
+  "license": "Copyright TANAKA Kohji",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress-vite": "^2.0.0-beta.27"
+  }
+}
