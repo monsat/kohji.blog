@@ -2,12 +2,14 @@
   "name": "kohji.blog",
   "version": "1.0.0",
   "author": "TANAKA Kohji",
-  "license": "Copyright TANAKA Kohji",
+  "license": "CC-BY-NC-SA-4.0",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@vuepress/plugin-register-components": "^2.0.0-beta.27",
+    "vuepress-plugin-use-pages": "^1.0.0",
     "vuepress-vite": "^2.0.0-beta.27"
   }
 }

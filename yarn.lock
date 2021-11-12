@@ -123,9 +123,9 @@
     "@vue/shared" "3.2.21"
 
 "@vue/devtools-api@^6.0.0-beta.18":
-  version "6.0.0-beta.20"
-  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.20.tgz#b5405c9a84fb44687d05e7c4c7854b1639141106"
-  integrity sha512-21u2jFOk8jbAneeGpDwZQ0W66RJa0IBDUyVl6SgKnn2cRFjLWzKj+ukXjpLhYr1KASyCe5E5U4jXwChVo0YUAw==
+  version "6.0.0-beta.20.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.20.1.tgz#5b499647e929c35baf2a66a399578f9aa4601142"
+  integrity sha512-R2rfiRY+kZugzWh9ZyITaovx+jpU4vgivAEAiz80kvh3yviiTU3CBuGuyWpSwGz9/C7TkSWVM/FtQRGlZ16n8Q==
 
 "@vue/reactivity@3.2.21":
   version "3.2.21"
@@ -324,6 +324,15 @@
   dependencies:
     "@vuepress/core" "2.0.0-beta.27"
     prismjs "^1.25.0"
+
+"@vuepress/plugin-register-components@^2.0.0-beta.27":
+  version "2.0.0-beta.27"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-2.0.0-beta.27.tgz#b57f73dfd20accc64fc4b45994dd263f1b151cc7"
+  integrity sha512-CZiEdOE5LoGb2rYcfITyPNbpK9AKKsve5amxKw28sgDw00Ssy3cgZc7G0JyqPXlylBh7KJp04+ZWQccr9lpUWw==
+  dependencies:
+    "@vuepress/core" "2.0.0-beta.27"
+    "@vuepress/utils" "2.0.0-beta.27"
+    chokidar "^3.5.2"
 
 "@vuepress/plugin-theme-data@2.0.0-beta.27":
   version "2.0.0-beta.27"
@@ -1407,6 +1416,13 @@ vue@^3.2.20:
     "@vue/runtime-dom" "3.2.21"
     "@vue/server-renderer" "3.2.21"
     "@vue/shared" "3.2.21"
+
+vuepress-plugin-use-pages@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-use-pages/-/vuepress-plugin-use-pages-1.0.0.tgz#343c4e19b038ec960d14bb623613c0c05279ced1"
+  integrity sha512-JQO7Hoh0ZBr1Wmx40y7fPE0MJu7BmUuv2ZGqxTWhYRuFs9tXzS8R6vgxH+qI4epDnyZKO4wjETyQ7SHsr5J0xQ==
+  dependencies:
+    "@vuepress/core" "2.0.0-beta.27"
 
 vuepress-vite@^2.0.0-beta.27:
   version "2.0.0-beta.27"
