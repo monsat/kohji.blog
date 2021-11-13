@@ -19,10 +19,13 @@ const frontmatter = usePageFrontmatter<DefaultThemePageFrontmatter>()
       <ArticleList/>
     </template>
     <template #page-top>
-      <div class="theme-default-content">
+      <div
+        v-if="page.path !== '/'"
+        class="theme-default-content"
+      >
         <h1>{{ page.title }}</h1>
         <hr>
-        <p class="text-right">📅 {{ frontmatter.date.slice(0, 10) }}</p>
+        <p v-if="frontmatter.date" class="text-right">📅 {{ frontmatter.date.slice(0, 10) }}</p>
       </div>
     </template>
   </Layout>
