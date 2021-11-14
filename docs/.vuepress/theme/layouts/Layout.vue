@@ -1,4 +1,5 @@
 <script lang="ts">
+import 'virtual:windi.css'
 import { defineComponent } from 'vue'
 import Layout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 

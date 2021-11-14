@@ -1,14 +1,7 @@
-<script>
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 import { usePages } from '@temp/pages'
 
-export default defineComponent({
-  setup() {
-    const pages = usePages()
-    console.log(pages)
-    return { pages }
-  },
-})
+const pages = usePages()
 </script>
 
 <template>
@@ -21,7 +14,7 @@ export default defineComponent({
       >
         <RouterLink :to="page.path">{{ page.title }}</RouterLink>
         <span v-if="page.frontmatter.date">
-          （{{ (new Date(page.frontmatter.date)).toLocaleString().split(' ')[0] }}）
+          （{{ (new Date(page.frontmatter.date)).toLocaleDateString() }}）
         </span>
       </li>
     </ul>
