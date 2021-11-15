@@ -21,7 +21,7 @@ const frontmatter = usePageFrontmatter<DefaultThemePageFrontmatter>()
     </template>
     <template #page-top>
       <div
-        v-if="page.path !== '/'"
+        v-if="page.path !== '/' && page.title"
         class="theme-default-content"
       >
         <h1>{{ page.title }}</h1>
