@@ -9,7 +9,7 @@ const props = defineProps<Props>()
 </script>
 
 <template>
-  <div class="my-2 md:(my-4 w-1/2)">
+  <div class="my-2 w-full md:(my-4 w-1/2)">
     <RouterLink :to="props.path">
       <div class="h-full flex justify-between">
         <article class="w-full flex flex-col f p-2 md:(mx-2 p-4) rounded shadow overflow-hidden bg-brand-100 dark:(bg-brand-750) hover:opacity-80">

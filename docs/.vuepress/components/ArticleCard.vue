@@ -7,7 +7,7 @@ const pages = usePages()
 <template>
   <div>
     <h2>記事一覧</h2>
-    <div class="flex flex-wrap justify-center md:(-mx-2)">
+    <div class="flex flex-wrap md:(-mx-2)">
       <ArticleCardItem
         v-for="page in pages"
         :key="page.key"
