@@ -74,6 +74,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ['vuepress-plugin-use-pages', {
       startsWith: '/a/',
     }],
+    ['@vuepress/plugin-google-analytics', { id: 'G-83SWW0DJYQ' }],
   ],
   shouldPrefetch: true,
   extendsPageOptions: ({ filePath }, app) => {
