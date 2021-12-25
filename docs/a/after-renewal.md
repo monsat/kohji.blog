@@ -15,6 +15,8 @@ date: 2021-11-15
 
 リニューアル中に書きつづけた [zenn の記事](https://zenn.dev/coedo/articles/vuepress-vite-blog) もさきほど公開しました。
 
+<BlogCard src="https://zenn.dev/coedo/articles/vuepress-vite-blog" />
+
 ## リニューアルしたら更新が滞る法則を回避する記事を書いてリニューアルしたら更新が滞るのを回避する
 
 というわけで記事を書きました。
