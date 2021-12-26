@@ -10,6 +10,7 @@ interface BlogCardResult {
   url: string
   title: string
   content?: string
+  image?: string
 }
 
 const { src } = defineProps<Props>()
