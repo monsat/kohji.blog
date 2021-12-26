@@ -24,13 +24,17 @@ onMounted(async () => {
   results.value = { url, title, content, image }
 })
 
+const open = () => {
+  window.open(src, '_blank')
+}
 </script>
 
 <template>
   <div>
     <div
       v-if="results"
-      class="w-full lg:(max-w-full) flex rounded border border-solid border-gray-200 overflow-hidden"
+      class="w-full lg:(max-w-full) flex rounded border border-solid border-gray-200 overflow-hidden cursor-pointer hover:(opacity-70)"
+      @click="open"
     >
       <div
         v-if="results.image"
