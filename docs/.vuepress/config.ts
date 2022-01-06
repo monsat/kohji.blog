@@ -16,7 +16,10 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         WindiCSS({
           preflight: false,
           scan: {
-            include: [path.resolve(__dirname, './**/*.{vue,html,md}')],
+            include: [
+              path.resolve(__dirname, './**/*.{vue,html,md}'),
+              path.resolve(__dirname, '../../node_modules/vuepress-plugin-netabare-switch/lib/**/*.{vue,html,md}'),
+            ],
             exclude: [
               'node_modules/**/*',
               '.git/**/*',
@@ -74,6 +77,9 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ['vuepress-plugin-use-pages', {
       startsWith: '/a/',
     }],
+    // @TODO: yarn link を使用するともっと楽に紐付けられる
+    // [path.resolve(__dirname, './plugin/vuepress-plugin-netabare-switch')],
+    ['vuepress-plugin-netabare-switch'],
     ['@vuepress/plugin-google-analytics', { id: 'G-83SWW0DJYQ' }],
   ],
   shouldPrefetch: true,
