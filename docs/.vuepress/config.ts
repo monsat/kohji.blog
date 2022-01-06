@@ -74,6 +74,9 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ['vuepress-plugin-use-pages', {
       startsWith: '/a/',
     }],
+    // @TODO: yarn link を使用するともっと楽に紐付けられる
+    // [path.resolve(__dirname, './plugin/vuepress-plugin-netabare-switch')],
+    ['vuepress-plugin-netabare-switch'],
     ['@vuepress/plugin-google-analytics', { id: 'G-83SWW0DJYQ' }],
   ],
   shouldPrefetch: true,

@@ -78,9 +78,9 @@
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
 "@types/node@*":
-  version "17.0.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.6.tgz#cc1589c9ee853b389e67e8fb4384e0f250a139b9"
-  integrity sha512-+XBAjfZmmivILUzO0HwBJoYkAyyySSLg5KCGBDFLomJo0sV6szvVLAf4ANZZ0pfWzgEds5KmGLG9D5hfEqOhaA==
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.8.tgz#50d680c8a8a78fe30abe6906453b21ad8ab0ad7b"
+  integrity sha512-YofkM6fGv4gDJq78g4j0mMuGMkZVxZDgtU0JRdx6FgiJDG+0fY0GKVolOV8WqVmEhLCXkQRjwDdKyPxJp/uucg==
 
 "@types/throttle-debounce@^2.1.0":
   version "2.1.0"
@@ -220,7 +220,7 @@
     envinfo "^7.8.1"
     esbuild "^0.13.12"
 
-"@vuepress/client@2.0.0-beta.32":
+"@vuepress/client@2.0.0-beta.32", "@vuepress/client@^2.0.0-beta.32":
   version "2.0.0-beta.32"
   resolved "https://registry.yarnpkg.com/@vuepress/client/-/client-2.0.0-beta.32.tgz#865ba7e4137fdc82f3158b6bda84d9fb0920932b"
   integrity sha512-nSvDsJiWUu+/oqOmI9nv4Tp9ei7+EyAhEaR+vMr7fcbVCGQlNmQo/coxjW6HRvMLR8Xul0Y4SH0Z21WJfZqw3Q==
@@ -229,7 +229,7 @@
     vue "^3.2.24"
     vue-router "^4.0.12"
 
-"@vuepress/core@2.0.0-beta.32", "@vuepress/core@^2.0.0-beta.27":
+"@vuepress/core@2.0.0-beta.32", "@vuepress/core@^2.0.0-beta.27", "@vuepress/core@^2.0.0-beta.32":
   version "2.0.0-beta.32"
   resolved "https://registry.yarnpkg.com/@vuepress/core/-/core-2.0.0-beta.32.tgz#51e6772226ba14c14ea04f993b79ba2b89c062f7"
   integrity sha512-LyjEEfRCEQJonR3SxVrVl44ZvLP6KKy6nFPinmrjuMe5GLHLSW4z/S+goxm8ka0Fblc51KxDZjtNshAlvYJ/OQ==
@@ -422,7 +422,7 @@
     vue "^3.2.24"
     vue-router "^4.0.12"
 
-"@vuepress/utils@2.0.0-beta.32":
+"@vuepress/utils@2.0.0-beta.32", "@vuepress/utils@^2.0.0-beta.32":
   version "2.0.0-beta.32"
   resolved "https://registry.yarnpkg.com/@vuepress/utils/-/utils-2.0.0-beta.32.tgz#2a68575324897ccb56abb3882e43aeea9dbc8d86"
   integrity sha512-ZbEM23BI7qbLnZYNAYoLF3EgWXVtO/MnB5aYKTC2+dHX90mEkfFoIBk00ICSi28HZJkW0OmsyMVFoUbI8QBvUw==
@@ -447,10 +447,25 @@
     "@vueuse/shared" "7.5.1"
     vue-demi "*"
 
+"@vueuse/core@^7.5.1":
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-7.5.3.tgz#7e8ea430a293670f12e5052a5285cb4ef8e9c758"
+  integrity sha512-D9j5ymHFMFRXQqCp0yZJkf/bvBGiz0MrKUa364p+L8dMyd5zyq2K1JmHyvoBd4xbTFRfmQ1h878u6YE5LCkDVQ==
+  dependencies:
+    "@vueuse/shared" "7.5.3"
+    vue-demi "*"
+
 "@vueuse/shared@7.5.1":
   version "7.5.1"
   resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-7.5.1.tgz#d88a8d8a4799c30e7dd4f965808e78b3793c3da6"
   integrity sha512-zMQEuYJyTmr5Hj2rYgSbb4H/cSI8mdaa9dUuw20j6rPV+xLV11y7vCyIkxo31uODDr0p77FMlProKzNDiK9rAA==
+  dependencies:
+    vue-demi "*"
+
+"@vueuse/shared@7.5.3":
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-7.5.3.tgz#2a844f38e45b1002e14d8f0ab5b41221c4fb9b09"
+  integrity sha512-BJ71cxHN5VByW1S58Gl85NFJaQu93F7Vs7K/MuAKsIIuHm9PBbkR5Vxkg9ko9cBdiKVt+FNoo13BhdbA+Vwycg==
   dependencies:
     vue-demi "*"
 
@@ -945,9 +960,9 @@ globby@^11.0.4:
     slash "^3.0.0"
 
 graceful-fs@^4.1.6, graceful-fs@^4.2.0:
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
-  integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
+  integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
 
 gray-matter@^4.0.3:
   version "4.0.3"
@@ -1283,10 +1298,15 @@ picocolors@^1.0.0:
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
   integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
 
-picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
+picomatch@^2.0.4, picomatch@^2.2.1:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
+
+picomatch@^2.2.3:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
+  integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
 postcss-csso@^5.0.1:
   version "5.0.1"
@@ -1564,6 +1584,18 @@ vue@^3.2.24:
     "@vue/runtime-dom" "3.2.26"
     "@vue/server-renderer" "3.2.26"
     "@vue/shared" "3.2.26"
+
+vuepress-plugin-netabare-switch@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-netabare-switch/-/vuepress-plugin-netabare-switch-1.0.0.tgz#e5d3c5646337f8f98af81e36d3f61decbe895013"
+  integrity sha512-5B6+47xMcZmKf8QLDR/JXo03ZgjiuET3q90VqMeeyltA4sQeNiNzuqm/2KVmf+Ntsv3semJuXAzLJ3WIrks9bw==
+  dependencies:
+    "@vuepress/client" "^2.0.0-beta.32"
+    "@vuepress/core" "^2.0.0-beta.32"
+    "@vuepress/utils" "^2.0.0-beta.32"
+    "@vueuse/core" "^7.5.1"
+    vue "^3.2.24"
+    vue-router "^4.0.12"
 
 vuepress-plugin-use-pages@^1.0.0:
   version "1.0.4"
