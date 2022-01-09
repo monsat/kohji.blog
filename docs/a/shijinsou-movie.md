@@ -59,10 +59,10 @@ date: 2022-01-01
 
 :::tip ネタバレ・スイッチの機能について詳しく知りたい方へ
 ネタバレ・スイッチは VuePress v2 のプラグインとして公開しています。
-https://www.npmjs.com/package/vuepress-plugin-netabare-switch
+[https://www.npmjs.com/package/vuepress-plugin-netabare-switch](https://www.npmjs.com/package/vuepress-plugin-netabare-switch)
 
 Zenn にプラグイン作成についての記事も書いていますので、詳しく知りたい方はぜひお読みください。
-https://zenn.dev/coedo/articles/vuepress-plugin-netabare-switch
+[https://zenn.dev/coedo/articles/vuepress-plugin-netabare-switch](https://zenn.dev/coedo/articles/vuepress-plugin-netabare-switch)
 :::
 
 ## ミステリー + <NetaBareSpan bare="ゾンビ">◯◯◯</NetaBareSpan> 映画
