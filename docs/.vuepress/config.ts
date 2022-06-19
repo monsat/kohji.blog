@@ -8,8 +8,8 @@ import colors from 'windicss/colors'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 
-import { usePagesPlugin } from './plugin/vuepress-plugin-use-pages'
-import { netabareSwitchPlugin } from './plugin/vuepress-plugin-netabare-switch'
+import { usePagesPlugin } from 'vuepress-plugin-use-pages'
+import { netabareSwitchPlugin } from 'vuepress-plugin-netabare-switch'
 
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
