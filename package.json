@@ -8,6 +8,7 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@rollup/plugin-dynamic-import-vars": "^1.4.3",
     "@vuepress/plugin-google-analytics": "^2.0.0-beta.27",
     "@vuepress/plugin-medium-zoom": "^2.0.0-beta.27",
     "@vuepress/plugin-register-components": "^2.0.0-beta.27",

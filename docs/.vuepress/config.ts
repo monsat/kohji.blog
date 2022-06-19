@@ -4,6 +4,7 @@ import { viteBundler } from 'vuepress'
 import { path } from '@vuepress/utils'
 import WindiCSS from 'vite-plugin-windicss'
 import colors from 'windicss/colors'
+import dynamicImportVars from '@rollup/plugin-dynamic-import-vars'
 
 import { searchPlugin } from '@vuepress/plugin-search'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
@@ -20,6 +21,13 @@ export default defineUserConfig({
 
   bundler: viteBundler({
     viteOptions: {
+      build: {
+        rollupOptions: {
+          plugins: [
+            dynamicImportVars(),
+          ],
+        },
+      },
       plugins: [
         WindiCSS({
           preflight: false,
