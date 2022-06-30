@@ -1,16 +1,24 @@
-import { defineUserConfig } from 'vuepress-vite'
-import type { DefaultThemeOptions } from 'vuepress-vite'
-import type { ViteBundlerOptions } from '@vuepress/bundler-vite'
+import { defineUserConfig } from 'vuepress'
+import { childDefaultTheme } from './theme'
+import { viteBundler } from 'vuepress'
 import { path } from '@vuepress/utils'
 import WindiCSS from 'vite-plugin-windicss'
 import colors from 'windicss/colors'
 
-export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
+import { searchPlugin } from '@vuepress/plugin-search'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+
+import { usePagesPlugin } from 'vuepress-plugin-use-pages'
+import { netabareSwitchPlugin } from 'vuepress-plugin-netabare-switch'
+
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+
+export default defineUserConfig({
   lang: 'ja',
   title: 'kohji.blog',
   description: '田中弘治のブログ',
 
-  bundlerConfig: {
+  bundler: viteBundler({
     viteOptions: {
       plugins: [
         WindiCSS({
@@ -56,49 +64,30 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       ],
     },
     vuePluginOptions: {},
-  },
+  }),
 
   markdown: {
     breaks: true,
   },
-  theme: path.resolve(__dirname, './theme'),
-  themeConfig: {
-    logo: '/images/kohji_vector_white.png',
-  },
+  theme: childDefaultTheme(),
   plugins: [
-    ['@vuepress/plugin-search'],
-    ['@vuepress/register-components', {
+    searchPlugin(),
+    registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
-    }],
-    // Plugin Package 編集用: package.json の main と types の lib → src, js → ts
-    // [path.resolve(__dirname, './plugin/vuepress-plugin-use-pages'), {
-    //   startsWith: '/a/',
-    // }],
-    ['vuepress-plugin-use-pages', {
+    }),
+    usePagesPlugin({
       startsWith: '/a/',
-    }],
-    // @TODO: yarn link を使用するともっと楽に紐付けられる
-    // [path.resolve(__dirname, './plugin/vuepress-plugin-netabare-switch')],
-    ['vuepress-plugin-netabare-switch'],
-    ['@vuepress/plugin-google-analytics', { id: 'G-83SWW0DJYQ' }],
+    }),
+    netabareSwitchPlugin(),
+    googleAnalyticsPlugin({ id: 'G-83SWW0DJYQ' }),
   ],
   shouldPrefetch: true,
-  extendsPageOptions: ({ filePath }, app) => {
+  extendsPageOptions: ({ filePath, frontmatter }, app) => {
     if (filePath?.startsWith(app.dir.source('a/'))) {
-      return {
-        // head: [
-        //   [
-        //     { link: { rel: 'canonical', href: `https://kohji.blog/${filePath}` } },
-        //   ],
-        // ],
-        frontmatter: {
-          permalinkPattern: '/a/:slug',
-        },
+      frontmatter = {
+        ...frontmatter,
+        permalinkPattern: '/a/:slug',
       }
     }
-  },
-  extendsPageData: (page) => {
-    const meta = 'foobar'
-    return { meta }
   },
 })
