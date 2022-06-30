@@ -8,16 +8,16 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "@rollup/plugin-dynamic-import-vars": "^1.4.3",
-    "@vuepress/plugin-google-analytics": "^2.0.0-beta.27",
-    "@vuepress/plugin-medium-zoom": "^2.0.0-beta.27",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.27",
-    "@vuepress/plugin-search": "^2.0.0-beta.27",
-    "vite-plugin-windicss": "^1.5.1",
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.48",
+    "@vuepress/plugin-medium-zoom": "^2.0.0-beta.48",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.48",
+    "@vuepress/plugin-search": "^2.0.0-beta.48",
+    "@vuepress/plugin-theme-data": "^2.0.0-beta.48",
+    "vite-plugin-windicss": "^1.8.4",
     "vuepress": "^2.0.0-beta.48",
     "vuepress-plugin-netabare-switch": "^1.0.1",
     "vuepress-plugin-use-pages": "^1.0.5",
-    "windicss": "^3.2.1"
+    "windicss": "^3.5.4"
   },
   "dependencies": {
     "ohmyfetch": "^0.4.6"
